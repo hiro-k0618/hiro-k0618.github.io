@@ -1,0 +1,92 @@
+header {
+  display: flex;
+  /*position: fixed;*/
+  width: 100%;
+  height: 100px;
+  background-color: #333;
+  align-items: center;
+  text-align: center;
+}
+
+h1{
+color: #1e90ff;
+font-size: 8em;
+margin:0px
+}
+
+
+*{
+	margin: 0px;
+  	padding: 0px;
+}
+
+.home {
+	/* 画像ファイルの指定 */
+  	background-image: url(img/haikei.jpg);
+   
+  	/* 画像を常に天地左右の中央に配置 */
+  	background-position: center center;
+   
+  	/* 画像をタイル状に繰り返し表示しない */
+  	background-repeat: no-repeat;
+  	 
+  	/* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+  	background-attachment: fixed;
+   
+  	/* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+  	background-size: cover;
+   
+  	/* 背景画像が読み込まれる前に表示される背景のカラー */
+  	background-color: #464646;
+
+}
+
+.menu-group {
+  text-align: center;
+  padding: 10px 0;
+  margin: 0 auto;
+}
+
+.menu-item {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+}
+
+.btn-shine {
+  color: #1e90ff;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 45px;
+  width: 140px;
+  position: relative;
+  text-decoration: none;
+  text-transform: center;
+  border: 1px solid transparent;
+  outline: 1px solid;
+  outline-color: rgba(0, 100, 255, 0.5);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1.2s cubic-bezier(0.2, 1, 0.2, 1);
+}
+
+.btn-shine:hover {
+  border-color: #1e90ff;
+  box-shadow: inset 0 0 20px rgba(0, 100, 255, 0.5), 0 0 20px rgba(0, 100, 255, 0.2);
+  outline-color: transparent;
+  outline-offset: 12px;
+  text-shadow: 2px 2px 3px #000;
+}
+
+
+footer {
+  width: 100%;
+  height: 100px; 
+  text-align: center;
+  padding: 20px 0;
+  background-color: #1e90ff;
+}
+.footer-text {
+  color: #fff;
+}
